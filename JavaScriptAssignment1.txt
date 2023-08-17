@@ -1,0 +1,115 @@
+QUESTION 1. Demonstrate the use of Switch case in JavaScript ?
+
+ANSWER:
+
+The getDay() method returns the weekday as a number between 0 and 6.
+
+(Sunday=0, Monday=1, Tuesday=2 ..)
+
+This example uses the weekday number to calculate the weekday name:
+
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+
+The result of day will be:
+
+Thursday 
+
+
+
+QUESTION 2 . Take 5 subject marks , calculate the percentage , and display grade according to the percentage ?
+
+ANSWER :-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+	
+
+	let English = 90;
+        let Biology = 94;
+        let Physics = 96;
+        let Chemistry = 92;
+        let Maths = 100;
+
+        let percentage = ((English + Biology + Physics + Chemistry + Maths) / 500 ) * 100;
+        console.log(percentage);
+
+        if (percentage >= 95 && percentage <= 100)
+        {
+            console.log("O Grade");
+        }
+        else if (percentage >= 90 && percentage < 95 )
+        {
+            console.log("A Grade");
+        }
+        else if (percentage >= 85 && percentage < 90 )
+        {
+            console.log("B+ Grade");
+        }
+        else if (percentage >= 80 && percentage < 85 )
+        {
+            console.log("B Grade");
+        }
+        else if (percentage >= 75 && percentage < 80 )
+        {
+            console.log("C+ Grade");
+        }
+        else if (percentage >= 70 && percentage < 75 )
+        {
+            console.log("C Grade");
+        }
+        else if (percentage >= 65 && percentage < 70 )
+        {
+            console.log("D+ Grade");
+        }
+        else if (percentage >= 60 && percentage < 65 )
+        {
+            console.log("D Grade");
+        }
+        else if (percentage >= 55 && percentage < 60 )
+        {
+            console.log("E+ Grade");
+        }
+        else if (percentage >= 50 && percentage < 55 )
+        {
+            console.log("E Grade");
+        }
+        else
+        {
+            console.log("FAIL");
+        }
+      
+      
+    </script>
+</body>
+</html>
+
